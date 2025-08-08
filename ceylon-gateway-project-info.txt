@@ -8,10 +8,6 @@ npm install
 
 ===============================
 
-npm install concurrently --save-dev
-
-===============================
-
 add Following to package.json
 
 "scripts": {
