@@ -16,7 +16,6 @@ add Following to package.json
     "install-all": "npm install && npm run install-frontend-deployment && npm run install-frontend-development",
     "frontend-deployment": "npm run watch --prefix frontend-deployment",
     "frontend-development": "npm start --prefix frontend-development",
-    "watch": "concurrently \"npm run frontend-deployment\" \"npm run frontend-development\"",
     "deploy": "npm run build --prefix frontend-development && npm start --prefix frontend-deployment",
     "deploy-cluster": "npm run build --prefix frontend-development && npm run cluster --prefix frontend-deployment",
     "test": "npm run test --prefix frontend-deployment && npm run test --prefix frontend-development"
