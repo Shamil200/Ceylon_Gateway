@@ -1,0 +1,21 @@
+===============================
+
+npm create vite@latest
+
+project name: frontend-development
+framework: React
+variant: JavaScript
+
+===============================
+
+npm install
+
+===============================
+
+add Following to vite.config.js
+
+build: {
+    outDir: '../frontend-deployment/public', // Specify the desired output directory
+  },
+
+===============================

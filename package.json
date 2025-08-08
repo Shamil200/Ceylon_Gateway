@@ -1,0 +1,19 @@
+{
+  "name": "ceylon-gateway-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-frontend-deployment": "npm install --prefix frontend-deployment",
+    "install-frontend-development": "npm install --prefix frontend-development",
+    "install-all": "npm install && npm run install-frontend-deployment && npm run install-frontend-development",
+    "frontend-deployment": "npm run watch --prefix frontend-deployment",
+    "frontend-development": "npm start --prefix frontend-development",
+    "deploy": "npm run build --prefix frontend-development && npm start --prefix frontend-deployment",
+    "deploy-cluster": "npm run build --prefix frontend-development && npm run cluster --prefix frontend-deployment",
+    "test": "npm run test --prefix frontend-deployment && npm run test --prefix frontend-development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
