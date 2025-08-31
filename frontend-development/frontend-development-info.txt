@@ -12,10 +12,24 @@ npm install
 
 ===============================
 
+npm install tailwindcss @tailwindcss/vite
+
+===============================
+
 add Following to vite.config.js
 
-build: {
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+    react()
+  ],
+  build: {
     outDir: '../frontend-deployment/public', // Specify the desired output directory
   },
+})
+
+===============================
+
+@import "tailwindcss"; add this to index.css
 
 ===============================
