@@ -30,6 +30,12 @@ export default defineConfig({
 
 ===============================
 
+add following in the vite.config.js
+
+import tailwindcss from '@tailwindcss/vite'
+
+===============================
+
 @import "tailwindcss"; add this to index.css
 
 ===============================
